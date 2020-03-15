@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+  <title>Idioms Quiz</title>
+</head>
+
+<body class="d-flex">
+
+  <div class="container" style="max-width: 800px;" id="container"> <!-- why doesn't max width work in ext stylesheet? -->
+
+<p id="intro">How many of these English idioms do you know?</p>
+
+    <div class="row text-center">
+      <div class="col" id="start">
+        <h2 id="start-button">Start Quiz!</h2>
+      </div>
+    </div>
+
+    <!-- main part of quiz -->
+
+    <div id="quiz" class="hide">
+
+      <div class="row text-center">
+        <div class="col image-container" id="image-container"></div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col" id="question"></div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col" id="choices-grid">
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+        </div> <!-- closes choice-grid -->
+      </div>
+
+    </div> <!-- closes quiz -->
+
+    <!-- display score -->
+
+    <div id="score-container" class="hide">
+
+      <div class="row text-center">
+        <div class="col image-container" id="final-image-container"></div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col" id="final-score"></div>
+      </div>
+
+    </div>  <!-- closes score container -->
+
+
+<!-- progress bar -->
+
+  <div class="row text-center">
+    <div class="col" id="progress"></div><!-- progress dots -->
+  </div>
+
+</div><!-- closes container -->
+
+
+
+
+
+
+
+  <!-- <div id="scoreContainer" style="display: none"></div> -->
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <title>Quiz app</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="start">Start Quiz!</div>
+      <div id="quiz" class="hide">
+        <div id="image-container"></div>
+        <div id="question"></div>
+        <div id="choices-grid">
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+        </div>
+
+      <div id="progress"></div>
+    </div>
+
+  </div>
+
+  <div id="timer">
+  <div id="counter"></div>
+  <div id="btimeGauge"></div>
+  <div id="timeGauge"></div>
+</div>
+  <script src="script2.js"></script>
+</body>
+</html> -->

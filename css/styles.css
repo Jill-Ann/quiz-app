@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: Lato, helvetica, sans-serif;
+    display: flex;
+}
+
+/* --------------main container------------ */
+
+
+#container {
+    background-color: white;
+    min-height: 500px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+/* --------------start button------------ */
+
+#start {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid green; */
+}
+
+#start-button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 30px;
+    color : #ff790f;
+    border : 5px solid #ff790f;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#intro {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: darkslategray;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+/* --------------quiz------------ */
+
+#quiz {
+  max-width: 100%;
+  letter-spacing: 0.05em;
+}
+
+img {
+    height: 160px;
+    width: auto;
+    border-radius: 30%;
+}
+
+#question p {
+    padding : 10px;
+    margin: 0;
+}
+
+.choice {
+    text-align: left;
+    cursor: pointer;
+    padding : 15px;
+    border-radius: 3px;
+    background-color: #EDEDED;
+    margin: 4px;
+}
+
+/* --------------media queries for start button and main part of quiz------------ */
+
+@media (min-width: 768px) {
+  #container {
+    box-shadow: 0px 5px 15px 0px;
+    margin-top: 20px;
+  }
+
+  #start-button {
+    border : 5px solid lightgray;
+    color : lightgray;
+  }
+
+  #start-button:hover {
+      border: 5px solid #ff790f;
+      color : #ff790f;
+  }
+
+  .image-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  img {
+      height: 220px;
+  }
+
+  .choice {
+      border: none;
+      background-color: white;
+  }
+
+  .choice:hover {
+      background-color: #EDEDED;
+  }
+}
+/* --------------end of media queries------------ */
+
+/* --------------progress dots------------ */
+
+#progress {
+    width : 500px;
+    padding: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.progress-dots {
+    width : 20px;
+    height : 20px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+
+/* --------------end of quiz score------------ */
+
+#score-container{
+    margin-top : 20px;
+    margin-bottom : 100px;
+    /* border: 1px solid red; */
+}
+
+#final-score {
+    width : 59px;
+    height :59px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --------------hide------------ */
+
+.hide {
+  display: none;
+}
