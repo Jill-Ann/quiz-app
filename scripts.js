@@ -18,14 +18,14 @@ let questions = [
         imgSrc : "images/tea.png",
         choiceA : "A.  it's not the type of thing that you like.",
         choiceB : "B.  it's too expensive for you.",
-        choiceC : "C.  you would rather have coffee.",
+        choiceC : "C.  you prefer coffee.",
         correct : "A"
     },{
         question : "Question 2<br><br>Your friend tells you that <i><b>there are plenty more fish in the sea</b></i>. She says this because...",
         imgSrc : "images/fish.png",
         choiceA : "A.  there was no salmon left at the supermarket.",
-        choiceB : "B.  you've just lost your job and she wants to make you feel better.",
-        choiceC : "C.  you've just broken up with your boy/girlfriend and she wants to cheer you up.",
+        choiceB : "B.  you just lost 50€.",
+        choiceC : "C.  you've just broken up with your boyfriend / girlfriend.",
         correct : "C"
     },{
         question : "Question 3<br><br>If you <i><b>rock the boat</b></i>, you...",
@@ -37,14 +37,14 @@ let questions = [
     },{
         question : "Question 4<br><br><i><b>You can't teach an old dog new tricks</b></i> means that...",
         imgSrc : "images/dog.png",
-        choiceA : "A.  ",
+        choiceA : "A.  it's hard for older people to do physical exercise.",
         choiceB : "B.  it's time to get a dog trainer.",
         choiceC : "C.  it can be difficult to make someone change their habits.",
         correct : "C"
     },{
         question : "Question 5<br><br>If something is <i><b>out of this world</b></i>, it's...",
         imgSrc : "images/rocket.png",
-        choiceA : "A.  crazy in a negative way.",
+        choiceA : "A.  crazy in a bad way.",
         choiceB : "B.  extremely good or impressive.",
         choiceC : "C.  impossible to achieve.",
         correct : "B"
@@ -107,7 +107,6 @@ function checkAnswer(answer){
         renderQuestion();
     }else{
         // end the quiz and show the score
-        // clearInterval(TIMER);
         scoreRender();
     }
 }
@@ -125,11 +124,12 @@ function answerIsWrong(){
 // score render
 function scoreRender(){
     quiz.classList.add('hide');
-    // scoreDiv.classList.remove('hide')
     scoreDiv.style.display = "block";
 
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
+
+    
 
     let img = "images/abacus.png";
 
