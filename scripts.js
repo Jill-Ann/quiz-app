@@ -129,7 +129,7 @@ function scoreRender(){
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
 
-    
+
 
     let img = "images/abacus.png";
 
