@@ -6,4 +6,4 @@ Learning English is tough, and remembering idioms and their meanings is time con
 
 ## Demo
 
-<img src="https://user-images.githubusercontent.com/60620619/103666089-756fe480-4f74-11eb-98e1-d41c9efdf01a.gif" alt="quiz demo" width="600" />
+<img src="https://user-images.githubusercontent.com/60620619/103666089-756fe480-4f74-11eb-98e1-d41c9efdf01a.gif" alt="quiz demo" width="700" />
